@@ -221,7 +221,18 @@ export default function App() {
 
       <footer className="site-footer">
         <span>Weatherly</span>
-        <span>Developed by Prasann</span>
+        <div className="footer-links" aria-label="Developer links">
+          <span>Developed by Prasann</span>
+          <a href="https://github.com/PrasannPrasan" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/prasannkumarnareliya/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a href="https://www.instagram.com/prasannn_/" target="_blank" rel="noreferrer">
+            Instagram
+          </a>
+        </div>
       </footer>
     </main>
   );

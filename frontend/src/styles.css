@@ -305,6 +305,7 @@ small {
 .site-footer {
   grid-column: 1 / -1;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
   padding: 0 4px;
@@ -313,8 +314,27 @@ small {
   font-weight: 800;
 }
 
-.site-footer span:last-child {
+.footer-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.footer-links span {
   color: var(--accent-dark);
+}
+
+.footer-links a {
+  color: rgba(22, 32, 29, 0.76);
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--accent-dark);
+  text-decoration: underline;
 }
 
 @media (max-width: 820px) {
@@ -358,6 +378,11 @@ small {
 
   .site-footer {
     flex-direction: column;
+    align-items: flex-start;
     gap: 4px;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }
