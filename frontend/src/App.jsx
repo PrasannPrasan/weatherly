@@ -134,7 +134,6 @@ export default function App() {
           <p className="eyebrow">Live forecast</p>
           <h1>Weatherly</h1>
           <p className="intro">Search any city for current conditions and a seven-day outlook.</p>
-          <p className="maker-credit">Developed by Prasann</p>
         </div>
 
         <form className="search-form" onSubmit={submitSearch}>
@@ -219,6 +218,11 @@ export default function App() {
           </>
         )}
       </section>
+
+      <footer className="site-footer">
+        <span>Weatherly</span>
+        <span>Developed by Prasann</span>
+      </footer>
     </main>
   );
 }
